@@ -1,0 +1,15 @@
+// base
+@import 'base/reset';
+@import 'base/vars';
+// components
+@import 'components/body';
+@import 'components/navbar';
+@import 'components/footer';
+@import 'components/utilities';
+
+// layouts
+@import 'layouts/index';
+@import 'layouts/about';
+@import 'layouts/producto';
+@import 'layouts/contact';
+@import 'layouts/login';

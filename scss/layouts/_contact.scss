@@ -1,0 +1,240 @@
+/* contacto */
+.titulo-contactanos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #948979;
+    color: black;
+}
+
+.titulo-contactanos h1 {
+    color: #000;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+// contacto forms
+.form-container {
+    max-width: 700px;
+    margin: 30px;
+    background-color: $color-azul-cremita-oscuro;
+    padding: 30px;
+    border-left: 5px solid #DFD0B8;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+.heading {
+    display: block;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.form-container .formContact .input {
+    color: #87a4b6;
+    width: 100%;
+    background-color: #153448;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    border-left: 1px solid transparent;
+}
+
+.form-container .formContact .input:focus {
+    border-left: 5px solid #DFD0B8;
+}
+
+.form-container .formContact .textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #153448;
+    color: #DFD0B8;
+    font-weight: bold;
+    resize: none;
+    max-height: 150px;
+    margin-bottom: 20px;
+    border-left: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-container .formContact .textarea:focus {
+    border-left: 5px solid #DFD0B8;
+}
+
+.form-container .formContact .button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.form-container .formContact .button-container .send-button {
+    flex-basis: 70%;
+    background: #DFD0B8;
+    padding: 10px;
+    color: #153448;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-container .formContact .button-container .send-button {
+
+    &:hover {
+        background: transparent;
+        border: 1px solid #DFD0B8;
+        color: #DFD0B8;
+    }
+}
+
+.form-container .formContact .button-container .reset-button-container {
+    filter: drop-shadow(1px 1px 0px #DFD0B8);
+    flex-basis: 30%;
+}
+
+.form-container .formContact .button-container .reset-button-container .reset-button {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    color: #DFD0B8;
+    font-weight: bold;
+    background: #153448;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+    transition: all 0.2s ease-in-out;
+}
+
+.form-container .formContact .button-container .reset-button-container .reset-button {
+    &:hover {
+        background: #DFD0B8;
+        color: #153448;
+    }
+}
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// mapa 
+.titulo-ubicanos {
+    background-color: #153448;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-ubicanos h3 {
+    background-color: #153448;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+// botones de contacto
+
+.container-redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #153448;
+
+}
+
+.card-redes-sociales {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+/* instagram*/
+.containerOne {
+
+    &:hover {
+        background-color: #d62976;
+        transition-duration: .3s;
+    }
+}
+
+/* twitter*/
+.containerTwo {
+    &:hover {
+        background-color: #00acee;
+        transition-duration: .3s;
+    }
+}
+
+/* linkdin*/
+.containerThree {
+
+    &:hover {
+        background-color: #0072b1;
+        transition-duration: .3s;
+    }
+
+}
+
+/* Whatsapp*/
+.containerFour {
+    &:hover {
+        background-color: #128C7E;
+        transition-duration: .3s;
+    }
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer .socialSvg {
+
+    &:hover {
+        animation: slide-in-top 0.3s both;
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
