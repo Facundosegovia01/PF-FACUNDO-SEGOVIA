@@ -15,9 +15,11 @@ header {
 
 .navbar-brand img {
     display: flex;
-    width: 400px;
-    object-fit: cover;
-    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    margin-top: 15px;
+    margin-left: 30px;
 }
 
 .nav-link {
@@ -40,9 +42,4 @@ header {
 
 .carousel img {
     height: 100%;
-}
-
-.navbar-brand img {
-    width: 300px;
-    height: 60px;
 }
