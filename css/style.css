@@ -782,8 +782,19 @@ img {
 .titulo-login h1 {
   display: flex;
   justify-content: center;
-  color: white;
-  font-size: 50px;
+  color: black;
+  background-color: #948979;
+  font-size: 60px;
+}
+
+.logo-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-login img {
+  margin-top: 20px;
+  width: 600px;
 }
 
 .login {
