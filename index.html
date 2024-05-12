@@ -36,53 +36,47 @@
 
 <body class="body">
   <!-- header -->
-  <header>
-    <!-- navbar -->
-    <nav class="navbar navbar-dark  navbar-expand-lg">
+  <header class="header">
+    <nav class="navbar navbar-expand-lg bg-body-transparent">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="img/logo2.png" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#"><img src="img/logo2.png" alt="logo"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-              aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item ">
-                <a class="nav-link active" href="index.html">Home</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="pages/about.html">Sobre nosotros</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="pages/producto.html">Poductos</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="pages/contact.html">Contactanos</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="pages/login.html">Inicia sesion</a>
-              </li>
-            </ul>
-          </div>
+
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="./pages/about.html">Sobre nosotros</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="./pages/producto.html">Poductos</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="./pages/contact.html">Contactanos</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="./pages/login.html">Inicia sesion</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+          </span>
         </div>
       </div>
     </nav>
+        <!-- encabezado-index -->
+        <div class="encabezado-index">
+          <h1>Somos WESTCARS</h1>
+          <p>Somos una AGENCIA dedicada y especializada a la compra y venta de autos. Si estas buscando comprar o cambiar tu
+            auto este es el lugar indicado!</p><a href="pages/contact.html">Contactanos</a>
+        </div>
   </header>
   <!-- main -->
   <main>
-    <!-- encabezado-index -->
-    <div class="encabezado-index">
-      <h1>Somos WESTCARS</h1>
-      <p>Somos una AGENCIA dedicada y especializada a la compra y venta de autos. Si estas buscando comprar o cambiar tu
-        auto este es el lugar indicado!</p><a href="pages/contact.html">Contactanos</a>
-    </div>
     <!-- card-razones -->
     <div class="razonesParaElegirnos">
       <h2>3 Razones para elegirnos</h2>
@@ -130,7 +124,7 @@
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">Consultá tu financiancia</h5>
+            <h5 class="card-title">Consultá tu financia</h5>
             <p class="card-text">Financiá hasta el 70% de tu auto con los mejores bancos e instituciones</p>
             <div class="financia-boton">
               <button class="cta"><span class="hover-underline-animation">Vende tu auto</span> <svg
@@ -191,7 +185,7 @@
     </section>
   </main>
   <!-- footer -->
-  <footer class="py-5 container">
+  <footer class="py-5 container-fluid">
     <div class="row">
       <div class="col-md-2 mb-3"><img src="img/logo.avif" alt="logo" class="footer-img"></div>
       <div class="col-md-2 mb-3">
